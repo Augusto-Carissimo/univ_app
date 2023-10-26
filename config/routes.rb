@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'about', to: 'pages#about'
   root 'courses#index'
-
+  get 'about', to: 'pages#about'
+  resources :courses
 end
